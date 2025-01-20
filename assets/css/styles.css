@@ -1,0 +1,239 @@
+.parks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.park-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.park-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.253);
+    cursor: grabbing;
+}
+
+.park-content {
+    padding: 1.5rem;
+}
+
+.park-name {
+    color: #2c3e50;
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+}
+
+.park-location {
+    color: #34495e;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.park-hours {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.park-description {
+    color: #595959;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.park-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.parks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.park-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.park-card:hover {
+    transform: translateY(-5px);
+}
+
+.park-content {
+    padding: 1.5rem;
+}
+
+.park-name {
+    color: #2c3e50;
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+}
+
+.park-location {
+    color: #34495e;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.park-hours {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.park-description {
+    color: #595959;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.park-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/**
+Filter Styles
+*/
+.parks-form-container {
+    max-width: var(--wp--style--global--content-size);
+}
+/* Basic Modern Style */
+.parks-filter-form {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.parks-filter-form select,
+.parks-filter-form input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 200px;
+    font-size: 14px;
+    flex: 1;
+}
+
+.parks-filter-form select:focus,
+.parks-filter-form input[type="text"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+.parks-filter-form button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.parks-filter-form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .parks-filter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .parks-filter-form select,
+    .parks-filter-form input[type="text"],
+    .parks-filter-form button {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* Optional: Material Design Style */
+.parks-filter-form.material {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.parks-filter-form.material select,
+.parks-filter-form.material input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+    background: transparent;
+    transition: border-color 0.3s ease;
+}
+
+.parks-filter-form.material select:focus,
+.parks-filter-form.material input[type="text"]:focus {
+    border-bottom-color: #2196F3;
+    box-shadow: none;
+}
+
+.parks-filter-form.material button {
+    background-color: #2196F3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(33,150,243,0.3);
+}
+
+.parks-filter-form.material button:hover {
+    background-color: #1976D2;
+    box-shadow: 0 4px 8px rgba(33,150,243,0.4);
+}
+
+/* Optional: Dark Theme */
+.parks-filter-form.dark {
+    background: #333;
+}
+
+.parks-filter-form.dark select,
+.parks-filter-form.dark input[type="text"] {
+    background: #444;
+    border-color: #555;
+    color: white;
+}
+
+.parks-filter-form.dark select:focus,
+.parks-filter-form.dark input[type="text"]:focus {
+    border-color: #666;
+}
+
+.parks-filter-form.dark button {
+    background-color: #666;
+}
+
+.parks-filter-form.dark button:hover {
+    background-color: #777;
+}
