@@ -127,7 +127,7 @@ function register_parks_post_type() {
 		"can_export" => true,
 		"rewrite" => [ "slug" => "parks", "with_front" => true ],
 		"query_var" => true,
-		"supports" => [ "title", "custom-fields", "author" ],
+		"supports" => [ "title", "author" ],
 		"show_in_graphql" => false,
 	];
 
