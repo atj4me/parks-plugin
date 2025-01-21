@@ -11,7 +11,7 @@
  * Plugin Name:       Parks
  * Plugin URI:        https://github.com/atj4me/parks
  * Description:       A simple WordPress plugin that registers a custom post type, implement a custom taxonomy, and includes a short code to display and filter a list of those posts.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Ajith Thampi Joseph
@@ -26,7 +26,7 @@ if (!defined('WPINC')) {
     die;
 }
 
-define('PARKS_PLUGIN_VERSION', '1.0.0');
+define('PARKS_PLUGIN_VERSION', '1.0.1');
 define('PARKS_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('PARKS_PLUGIN_URL', plugin_dir_url(__FILE__));
 
