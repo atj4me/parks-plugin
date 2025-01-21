@@ -1,5 +1,14 @@
 <?php
 
+
+/**
+ * Registers the 'facilities' taxonomy for the 'parks' post type.
+ *
+ * This function sets up the labels and arguments for the 'facilities' taxonomy,
+ * and registers it with WordPress using the `register_taxonomy` function.
+ *
+ * @return void
+ */
 function register_facilities_taxonomy() {
 
 	/**
@@ -56,5 +65,12 @@ function register_facilities_taxonomy() {
 		"sort" => false,
 		"show_in_graphql" => false,
 	];
+	/**
+	 * Registers a custom taxonomy called "facilities" for the "parks" post type.
+	 *
+	 * @param string $taxonomy The name of the taxonomy to register.
+	 * @param array $object_type An array of object types with which the taxonomy should be associated.
+	 * @param array|string $args Optional. An array of arguments for registering a taxonomy.
+	 */
 	register_taxonomy( "facilities", [ "parks" ], $args );
 }

@@ -1,3 +1,18 @@
+<?php /**
+ * This template renders a filter form for parks.
+ * 
+ * The form includes:
+ * - A dropdown to filter parks by facilities.
+ * - A text input to search parks by name.
+ * - A submit button to apply the filters.
+ * 
+ * The facilities dropdown is populated with terms from the 'facilities' taxonomy.
+ * The selected facility and search term are preserved on form submission.
+ * 
+ * @package ParksPlugin
+ * @subpackage Templates
+ */
+?>
 <div class="parks-form-container">
     <form method="POST" class="parks-filter-form material">
 

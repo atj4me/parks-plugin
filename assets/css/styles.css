@@ -8,7 +8,7 @@
 .park-card {
     background: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     overflow: hidden;
 }
@@ -34,65 +34,6 @@
     color: #34495e;
     font-size: 0.95rem;
     margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.park-hours {
-    color: #7f8c8d;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-}
-
-.park-description {
-    color: #595959;
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-.park-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    vertical-align: middle;
-}
-.parks-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.park-card {
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    overflow: hidden;
-}
-
-.park-card:hover {
-    transform: translateY(-5px);
-}
-
-.park-content {
-    padding: 1.5rem;
-}
-
-.park-name {
-    color: #2c3e50;
-    font-size: 1.25rem;
-    margin: 0 0 1rem 0;
-    font-weight: 600;
-}
-
-.park-location {
-    color: #34495e;
-    font-size: 0.95rem;
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
     gap: 0.5rem;
 }
 
@@ -116,11 +57,49 @@
 }
 
 /**
+Detail Page
+**/
+h2.detail-title {
+    color: #2c3e50;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.hours-block {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    align-items: center;
+}
+
+.hours-block>h3 {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.park-detail-item {
+    display: flex;
+    align-items: left;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-direction: column;
+}
+
+.detail-content {
+    color: #34495e;
+    font-size: 0.95rem;
+}
+
+/**
 Filter Styles
 */
 .parks-form-container {
     max-width: var(--wp--style--global--content-size);
 }
+
 /* Basic Modern Style */
 .parks-filter-form {
     display: flex;
@@ -183,7 +162,7 @@ Filter Styles
 /* Optional: Material Design Style */
 .parks-filter-form.material {
     background: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .parks-filter-form.material select,
@@ -205,12 +184,12 @@ Filter Styles
     background-color: #2196F3;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    box-shadow: 0 2px 4px rgba(33,150,243,0.3);
+    box-shadow: 0 2px 4px rgba(33, 150, 243, 0.3);
 }
 
 .parks-filter-form.material button:hover {
     background-color: #1976D2;
-    box-shadow: 0 4px 8px rgba(33,150,243,0.4);
+    box-shadow: 0 4px 8px rgba(33, 150, 243, 0.4);
 }
 
 /* Optional: Dark Theme */
