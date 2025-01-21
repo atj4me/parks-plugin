@@ -97,32 +97,32 @@ require_once PARKS_PLUGIN_PATH . 'includes/parks-template.php';
  * @param string $file The path to the main plugin file.
  * @param callable $function The function to be called when the plugin is activated.
  */
-register_activation_hook(__FILE__, 'parks_plugin_activate');
+register_activation_hook(__FILE__, 'parks_activate');
 
 /**
  * Registers the deactivation hook for the Parks Plugin.
  *
- * This function registers the 'parks_plugin_deactivate' function to be called
+ * This function registers the 'parks_deactivate' function to be called
  * when the plugin is deactivated. The deactivation hook is used to perform
  * cleanup tasks when the plugin is deactivated.
  *
  * @see https://developer.wordpress.org/reference/functions/register_deactivation_hook/
  *
  * @param string $__FILE__ The path to the main plugin file.
- * @param string 'parks_plugin_deactivate' The name of the function to be called on plugin deactivation.
+ * @param string 'parks_deactivate' The name of the function to be called on plugin deactivation.
  */
-register_deactivation_hook(__FILE__, 'parks_plugin_deactivate');
+register_deactivation_hook(__FILE__, 'parks_deactivate');
 
 /**
  * Registers the uninstall hook for the Parks Plugin.
  *
  * This hook will be triggered when the plugin is uninstalled, allowing
- * the `parks_plugin_uninstall` function to run and perform any necessary
+ * the `parks_uninstall` function to run and perform any necessary
  * cleanup tasks.
  *
- * @see parks_plugin_uninstall()
+ * @see parks_uninstall()
  */
-register_uninstall_hook(__FILE__, 'parks_plugin_uninstall');
+register_uninstall_hook(__FILE__, 'parks_uninstall');
 
 /**
  * Registers the 'parks' custom post type.

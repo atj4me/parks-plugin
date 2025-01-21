@@ -9,7 +9,7 @@
  *
  * @return void
  */
-function parks_plugin_activate()
+function parks_activate()
 {
     // Register the Post Type
     register_parks_post_type();
@@ -31,7 +31,7 @@ function parks_plugin_activate()
  *
  * @return void
  */
-function parks_plugin_deactivate()
+function parks_deactivate()
 {
     // Unregister post type and taxonomy
     unregister_post_type('parks');
@@ -51,7 +51,7 @@ function parks_plugin_deactivate()
  *
  * @return void
  */
-function parks_plugin_uninstall()
+function parks_uninstall()
 {
     // Get all posts of 'park' post type
     $parks = get_posts(array(
